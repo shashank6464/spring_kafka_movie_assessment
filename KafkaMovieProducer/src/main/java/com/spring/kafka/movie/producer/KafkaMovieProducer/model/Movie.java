@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Data // it will take care all CURD
+@Data // for CURD
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

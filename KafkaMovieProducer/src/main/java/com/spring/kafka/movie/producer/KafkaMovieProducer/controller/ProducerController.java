@@ -20,6 +20,7 @@ public class ProducerController {
     @Autowired
     private MovieService service;
 
+    //add movie
     @PostMapping(value = "/add",consumes = "application/json",produces = "application/json")
     public void send(@RequestBody Movie movie){
         System.out.println(movie);
@@ -36,6 +37,7 @@ public class ProducerController {
         }
     }
 
+    //get all movies
     @GetMapping
     public List<Movie> getAllMovie(){
         return service.getAllMovies();

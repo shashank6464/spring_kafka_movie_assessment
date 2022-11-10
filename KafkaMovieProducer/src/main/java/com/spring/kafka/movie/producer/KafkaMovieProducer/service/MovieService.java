@@ -12,10 +12,12 @@ public class MovieService {
     @Autowired
     MovieRepository repository;
 
+    //to get all movies
     public List<Movie> getAllMovies(){
         return repository.findAll();
     }
 
+    //for adding movie
     public void addMovie(Movie movie){ repository.save(movie);}
 
 }

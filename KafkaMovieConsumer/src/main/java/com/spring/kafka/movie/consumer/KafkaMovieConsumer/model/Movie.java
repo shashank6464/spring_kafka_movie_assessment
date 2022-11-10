@@ -27,5 +27,6 @@ public class Movie {
 
     private String rating;
 
+    
 
 }

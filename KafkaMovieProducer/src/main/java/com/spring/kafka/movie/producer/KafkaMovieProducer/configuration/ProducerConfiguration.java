@@ -20,7 +20,8 @@ import java.util.Map;
 public class ProducerConfiguration {
 
 
-    @Bean // Configuration for Producer
+    // Configuration for Producer
+    @Bean
     public Map<String, Object> producerConfig( ){
         Map<String,Object> config = new HashMap<>();
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, KafkaConstant.BROKER); // Kafka Server URL

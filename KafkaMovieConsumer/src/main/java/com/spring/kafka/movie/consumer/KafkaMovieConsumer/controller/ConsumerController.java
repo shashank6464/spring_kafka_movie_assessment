@@ -1,5 +1,7 @@
 package com.spring.kafka.movie.consumer.KafkaMovieConsumer.controller;
 
+
+
 import com.spring.kafka.movie.consumer.KafkaMovieConsumer.model.Movie;
 import com.spring.kafka.movie.consumer.KafkaMovieConsumer.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ public class ConsumerController {
     @Autowired
     private MovieService service;
 
+    //to get all movies - Consumer
     @GetMapping
     public List<Movie> getAllMovie(){
         return service.getAllMovies();
